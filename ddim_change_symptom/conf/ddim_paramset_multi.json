@@ -1,0 +1,40 @@
+{
+  "norm_file":"normNML_Gaussian_N1000d3K10.json",
+  "simulation":{
+    "iter":1
+  },
+  "data_params":{
+    "l_T":[10,20,10], "":"The length of [ before-change, transition-period, after-change]",
+    "l_K":[2,3,3], "":"The number of clusters in each time [ before-change, transition-period, after-change]",
+    "l_mu":[[-10, -10, 10], [10, -10, -10], [-10, 10, -10]], "":"The center in each cluster",
+    "var":3, "":"The scale of variance-covariance matrix",
+    "corr":0.2, "":"The scale of correlation",
+    "abs_mu":10, "":"The scale of center in each cluster"
+  },
+  "data_params_multi":{
+    "l_T":[10,20,10], "":"Second change: The length of [ before-change, transition-period, after-change]",
+    "l_K":[3,4,4], "":"Second change: The number of clusters in each time [ before-change, transition-period, after-change]",
+    "l_mu":[[-10, -10, 10], [10, -10, -10], [-10, 10, -10], [10, -10, 10]], "":"The center in each cluster",
+    "var":3, "":"The scale of variance-covariance matrix",
+    "corr":0.2, "":"The scale of correlation",
+    "abs_mu":10, "":"The scale of center in each cluster"
+  },
+  "clustering_params":{
+    "num_em":1, "":"Number of times of EM algorithm"
+  },
+  "sdms_params":{
+    "sdms_lam":1, "":"Scale of change code-length in SDMS",
+    "sdms_beta":[1.5,1.5], "":"Parameters of prior distribution for change in SDMS (beta-distribution)"
+  },
+  "sim_params":{
+    "th_change_diff":0.1, "":"The threshold to detect symptom with Diff",
+    "th_change_th":0.1, "":"The threshold to detect symptom with TH",
+    "th_change_sdms":0.5, "":"The threshold to detect symptom with SDMS",
+    "th_change_fs":0.5, "":"The threshold to detect symptom with FS",
+    "th_change_ws_fs":0.1, "":"The threshold to detect symptom with weighted average FS",
+    "th_change_ws_fs_th":0.1, "":"The threshold to detect symptom with weighted average FS (threshold method)",
+    "ben_T":20.0, "":"The range of calculating benefit",
+    "fs_alpha":0.2, "":"The weight parameter of fixed share algorithm",
+    "fs_temp_beta":0.031622776601683791, "":"The weight parameter of fixed share algorithm"
+  }
+}
